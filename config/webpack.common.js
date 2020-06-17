@@ -9,7 +9,7 @@ module.exports = {
    *
    * The first place Webpack looks to start building the bundle.
    */
-  entry: [paths.src + '/index.js'],
+  entry: [paths.js + '/index.js'],
 
   /**
    * Output
@@ -54,7 +54,7 @@ module.exports = {
      * Generates an HTML file from a template.
      */
     new HtmlWebpackPlugin({
-      title: 'Webpack Boilerplate',
+      title: 'Serge Bocancea',
       favicon: paths.static + '/favicon.png',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
@@ -85,7 +85,7 @@ module.exports = {
        * Inject CSS into the head with source maps.
        */
       {
-        test: /\.(scss|css)$/,
+        test: /\.(scss|css|sass)$/,
         use: [
           'style-loader',
           { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
