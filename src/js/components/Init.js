@@ -1,6 +1,6 @@
 class Init {
     constructor() {
-        console.log('working');
+        console.log('working Init');
     }
 }
 
